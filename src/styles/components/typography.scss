@@ -1,0 +1,61 @@
+/*
+  Basic styles for links
+*/
+a {
+  @include transition(color);
+  color: $link-color;
+  text-decoration: $link-decoration;
+}
+
+ul,
+ol,
+dl,
+p {
+  margin: 0;
+}
+
+h1, .h1 {
+  font-size: 80px;
+  font-family: $font-family-secondary;
+  line-height: 1.02;
+  letter-spacing: -1px;
+  margin: 0;
+  padding: 0;
+}
+
+h2, .h2 {
+  font-size: 54px;
+  font-family: $font-family-secondary;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+h3, .h3 {
+  font-size: 36px;
+  font-family: $font-family-secondary;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+h4, .h4 {
+  font-size: 22px;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 16px;
+  font-weight: $font-weight-light;
+  line-height: 1.2;
+  letter-spacing: 0.16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
