@@ -1,5 +1,5 @@
 module.exports = function initMobileNav() {
-	jQuery('body').mobileNav({
+	$('body').mobileNav({
 		menuActiveClass: 'nav-active',
 		menuOpener: '.nav-opener',
 		hideOnClickOutside: true,

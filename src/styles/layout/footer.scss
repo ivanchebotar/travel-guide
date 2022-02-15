@@ -1,0 +1,85 @@
+.footer {
+  padding: 50px 0;
+  position: relative;
+  background-color: $black-04;
+
+  @include media('>=tablet') {
+    padding: 100px 0 50px;
+  }
+}
+
+.footer-content {
+  margin: 0 0 50px;
+
+  @include media('>=tablet') {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 100px;
+  }
+
+  .logo {
+    width: 140px;
+    margin: 0 auto 50px;
+
+    @include media('>=tablet') {
+      width: 180px;
+      margin: 0;
+    }
+  }
+}
+
+.footer-nav-holder {
+  @include media('>=tablet') {
+    width: 70%;
+    padding: 0 0 0 10px;
+  }
+
+  h4 {
+    color: $secondary;
+    margin: 0 0 40px;
+    text-align: center;
+    text-decoration: underline;
+
+    @include media('>=tablet') {
+      text-align: left;
+    }
+  }
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+
+  li {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 0 20px;
+    text-align: center;
+
+    @include media('>=tablet') {
+      width: 50%;
+      margin: 0 0 20px;
+      text-align: left;
+    }
+
+    @include media('>=desktop') {
+      width: 25%;
+    }
+
+    a {
+      @include transition(border-bottom);
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-bottom: 1px solid $secondary;
+      }
+      
+    }
+  }
+}
+
+.rights-sign {
+  color: $secondary;
+  text-align: center;
+}

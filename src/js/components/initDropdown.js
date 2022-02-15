@@ -1,5 +1,5 @@
 module.exports = function initDropDown() {
-  jQuery('ul.dropdown').animDropdown({
+  $('ul.dropdown').animDropdown({
     effect: 'fade',
     animSpeed: 300
   });

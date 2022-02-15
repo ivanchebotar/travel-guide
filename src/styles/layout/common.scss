@@ -575,3 +575,35 @@
     color: $primary;
   }
 }
+
+.form-section {
+  padding: 60px 0;
+}
+
+.form-content {
+  .post {
+    @include media('>=tablet') {
+      flex-direction: row-reverse;
+    }
+
+    &-img {
+      @include media('>=tablet') {
+        padding: 0 40px 0 0;
+      }
+    }
+  }
+}
+
+.form-holder {
+  width: 100%;
+  margin: 0 0 50px;
+
+  @include media('>=tablet') {
+    width: 46%;
+    margin: 0;
+  }
+
+  .section-title {
+    color: $primary;
+  }
+}

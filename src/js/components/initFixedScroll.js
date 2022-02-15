@@ -1,5 +1,5 @@
 module.exports = function initStickyScrollBlock() {
-	jQuery('#header-fixed').stickyScrollBlock({
+	$('#header-fixed').stickyScrollBlock({
 		setBoxHeight: true,
 		activeClass: 'fixed-position',
 		positionType: 'fixed',

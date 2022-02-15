@@ -10883,7 +10883,7 @@ return jQuery;
 
 },{}],2:[function(require,module,exports){
 module.exports = function initAccordion() {
-	jQuery('.accordion').slideAccordion({
+	$('.accordion').slideAccordion({
 		opener: '.opener',
 		slider: '.slide',
 		animSpeed: 300
@@ -10893,9 +10893,9 @@ module.exports = function initAccordion() {
 let accrodionPlugin = require('./../plugins/accordionPlugin');
 
 accrodionPlugin();
-},{"./../plugins/accordionPlugin":8}],3:[function(require,module,exports){
+},{"./../plugins/accordionPlugin":7}],3:[function(require,module,exports){
 module.exports = function initDropDown() {
-  jQuery('ul.dropdown').animDropdown({
+  $('ul.dropdown').animDropdown({
     effect: 'fade',
     animSpeed: 300
   });
@@ -10904,9 +10904,9 @@ module.exports = function initDropDown() {
 let dropdownPlugin = require('./../plugins/dropdownPlugin');
 
 dropdownPlugin();
-},{"./../plugins/dropdownPlugin":9}],4:[function(require,module,exports){
+},{"./../plugins/dropdownPlugin":8}],4:[function(require,module,exports){
 module.exports = function initStickyScrollBlock() {
-	jQuery('#header-fixed').stickyScrollBlock({
+	$('#header-fixed').stickyScrollBlock({
 		setBoxHeight: true,
 		activeClass: 'fixed-position',
 		positionType: 'fixed',
@@ -10923,9 +10923,9 @@ module.exports = function initStickyScrollBlock() {
 let fixedScrollPlugin = require('./../plugins/fixedScrollPlugin');
 
 fixedScrollPlugin();
-},{"./../plugins/fixedScrollPlugin":10}],5:[function(require,module,exports){
+},{"./../plugins/fixedScrollPlugin":9}],5:[function(require,module,exports){
 module.exports = function initMobileNav() {
-	jQuery('body').mobileNav({
+	$('body').mobileNav({
 		menuActiveClass: 'nav-active',
 		menuOpener: '.nav-opener',
 		hideOnClickOutside: true,
@@ -10937,50 +10937,22 @@ let mobileNavPlugin = require('./../plugins/mobileNavPlugin');
 
 mobileNavPlugin();
 
-},{"./../plugins/mobileNavPlugin":11}],6:[function(require,module,exports){
-
-module.exports = function initSlickSlider() {
-  $('.testimonial-slider').slick({
-    infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
-}
-},{}],7:[function(require,module,exports){
+},{"./../plugins/mobileNavPlugin":10}],6:[function(require,module,exports){
 const $ = window.$ = window.jQuery = require('jquery');
 
-let initAccordion = require('./components/initAccordion');
-let initDropDown = require('./components/initDropdown');
-let initStickyScrollBlock = require('./components/initFixedScroll');
-let initMobileNav = require('./components/initMobileNav');
-let initSlickSlider = require('./components/initSlick');
+const initAccordion = require('./components/initAccordion');
+const initDropDown = require('./components/initDropdown');
+const initStickyScrollBlock = require('./components/initFixedScroll');
+const initMobileNav = require('./components/initMobileNav');
+// const initSlickSlider = require('./components/initSlick');
 
 initAccordion();
 initDropDown();
 initStickyScrollBlock();
 initMobileNav();
-initSlickSlider();
-},{"./components/initAccordion":2,"./components/initDropdown":3,"./components/initFixedScroll":4,"./components/initMobileNav":5,"./components/initSlick":6,"jquery":1}],8:[function(require,module,exports){
+// initSlickSlider();
+
+},{"./components/initAccordion":2,"./components/initDropdown":3,"./components/initFixedScroll":4,"./components/initMobileNav":5,"jquery":1}],7:[function(require,module,exports){
 module.exports = function accrodionPlugin() {
   ;(function(root, factory) {
     'use strict';
@@ -11181,7 +11153,7 @@ module.exports = function accrodionPlugin() {
     return SlideAccordion;
   }));
 }
-},{"jquery":1}],9:[function(require,module,exports){
+},{"jquery":1}],8:[function(require,module,exports){
 module.exports = function dropdownPlugin() {
   ;(function($){
     $.fn.animDropdown = function(o){
@@ -11328,7 +11300,7 @@ module.exports = function dropdownPlugin() {
     };
   }(jQuery));
 }
-},{}],10:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 module.exports = function fixedScrollPlugin() {
   ;(function($, $win) {
     'use strict';
@@ -11685,7 +11657,7 @@ module.exports = function fixedScrollPlugin() {
     window.StickyScrollBlock = StickyScrollBlock;
   }(jQuery, jQuery(window)));
 }
-},{}],11:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 module.exports = function mobileNavPlugin() {
   ;(function($) {
     function MobileNav(options) {
@@ -11804,4 +11776,4 @@ module.exports = function mobileNavPlugin() {
   }(jQuery));
 }
 
-},{}]},{},[7]);
+},{}]},{},[6]);

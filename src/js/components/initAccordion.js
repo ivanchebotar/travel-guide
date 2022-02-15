@@ -1,5 +1,5 @@
 module.exports = function initAccordion() {
-	jQuery('.accordion').slideAccordion({
+	$('.accordion').slideAccordion({
 		opener: '.opener',
 		slider: '.slide',
 		animSpeed: 300

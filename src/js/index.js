@@ -1,13 +1,13 @@
 const $ = window.$ = window.jQuery = require('jquery');
 
-let initAccordion = require('./components/initAccordion');
-let initDropDown = require('./components/initDropdown');
-let initStickyScrollBlock = require('./components/initFixedScroll');
-let initMobileNav = require('./components/initMobileNav');
-let initSlickSlider = require('./components/initSlick');
+const initAccordion = require('./components/initAccordion');
+const initDropDown = require('./components/initDropdown');
+const initStickyScrollBlock = require('./components/initFixedScroll');
+const initMobileNav = require('./components/initMobileNav');
+// const initSlickSlider = require('./components/initSlick');
 
 initAccordion();
 initDropDown();
 initStickyScrollBlock();
 initMobileNav();
-initSlickSlider();
+// initSlickSlider();

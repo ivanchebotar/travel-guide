@@ -1,4 +1,3 @@
-
 module.exports = function initSlickSlider() {
   $('.testimonial-slider').slick({
     infinite: false,
