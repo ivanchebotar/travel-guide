@@ -6,7 +6,9 @@ ________________________________________________________________________________
 
 ## what is used in this project?
 
-This project is built using Gulp task-manager. The code is minified so that it doesn't take much time to load the page.
+This project is built using Gulp task-manager. 
+
+If you want to deploy the project on your device use `npm start`
 
 
 
